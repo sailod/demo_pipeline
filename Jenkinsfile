@@ -4,9 +4,8 @@ pipeline {
 
     stage('Hello') {
       steps {
-        script {
-          python -c "print('hello world')"
-        }
+          sh 'python -c "print('hello world')"'
+
       }
     }
 
