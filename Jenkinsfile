@@ -13,9 +13,7 @@ pipeline {
 
     stage('Get Weather') {
       steps {
-        script {
           python3 get_weather.py
-        }
       }
     }
 
