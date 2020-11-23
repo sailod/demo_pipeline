@@ -13,8 +13,10 @@ pipeline {
 
     stage('Get Weather') {
       steps {
+	sh '''
           python3 get_weather.py
-      }
+	  '''      
+	}
     }
 
   }
