@@ -14,7 +14,7 @@ pipeline {
     stage('Get Weather') {
       steps {
 	sh '''
-          /usr/bin/python3 get_weather.py
+          python3 get_weather.py
 	  '''      
 	}
     }
